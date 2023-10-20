@@ -6,15 +6,15 @@ from flask import Flask
 app = Flask(__name__)
 
 
-@app.route('/', trict_slashes=False)
+@app.route('/', strict_slashes=False)
 def hello_HBNB():
     """display hello world"""
     return 'Hello HBNB!'
 
 
-@app.route('/hbnb', trict_slashes=False)
+@app.route('/hbnb', strict_slashes=False)
 def hello_HBNB():
-    """display hello world"""
+    """display HBNB"""
     return 'HBNB'
 
 
