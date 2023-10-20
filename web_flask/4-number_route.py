@@ -34,7 +34,7 @@ def python(text='is cool'):
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
     """display number"""
-    return f'{n} is a numebr'
+    return f'{escape(n)} is a numebr'
 
 
 if __name__ == '__main__':
