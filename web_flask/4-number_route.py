@@ -20,17 +20,20 @@ def HBNB():
 
 @app.route('/c/<text>', strict_slashes=False)
 def c(text):
+    """display text"""
     return f'C {text.replace("_", " ")}'
 
 
 @app.route('/python/')
 @app.route('/python/<text>', strict_slashes=False)
 def python(text='is cool'):
+    """display text"""
     return f'Python {text.replace("_", " ")}'
 
 
 @app.route('/number/<int:n>', strict_slashes=False)
 def number(n):
+    """display number"""
     return f'{n:d} is a numebr'
 
 
