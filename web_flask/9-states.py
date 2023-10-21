@@ -9,7 +9,6 @@ app = Flask(__name__)
 app.url_map.strict_slashes = False
 
 
-
 @app.route('/states')
 def states():
     """Get all state data"""
@@ -28,7 +27,7 @@ def states_by_id(id):
             notfound = False
             break
     return render_template("9-states.html", id=id,
-                           state=obj, notfound=notfound) 
+                           state=obj, notfound=notfound)
 
 
 @app.teardown_appcontext
